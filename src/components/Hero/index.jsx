@@ -24,7 +24,7 @@ export default function Hero() {
           {/* Sol: Görsel */}
           <div className={styles.media}>
             <img
-              src="/images/hero.jpg"  /* kendi görsel yolunu kullan */
+              src="images/hero.jpg"  /* kendi görsel yolunu kullan */
               alt="Usta Hizmet – boya, bahçe ve çim hizmetleri"
               loading="eager"
             />

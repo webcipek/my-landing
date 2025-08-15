@@ -2,30 +2,30 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from './index.module.scss'
 
 /**
- * Görselleri public/images altına koyup /images/... olarak ver:
- * public/images/boya1.jpg -> "/images/boya1.jpg"
+ * Görselleri public/images altına koyup images/... olarak ver:
+ * publicimages/boya1.jpg -> "images/boya1.jpg"
  */
 const slides = [
   {
-    image: '/images/boya-badana.jpg',
+    image: 'images/boya-badana.jpg',
     title: 'Pürüzsüz Boya – Badana',
     subtitle: 'Temiz işçilik, zamanında teslim. Ücretsiz keşif!',
     cta: { label: 'Teklif Al', targetId: 'contact' },
   },
   {
-    image: '/images/bahce1.avif',
+    image: 'images/bahce1.avif',
     title: 'Bahçe Temizliği',
     subtitle: 'Budama, toplama, atık çıkarma. Düzenli bakım planı.',
     cta: { label: 'Hizmetleri Gör', targetId: 'services' },
   },
   {
-    image: '/images/cim1.jpg',
+    image: 'images/cim1.jpg',
     title: 'Profesyonel Çim Biçme',
     subtitle: 'Kenar düzeltme + toplama. Periyotlu bakımda indirim.',
     cta: { label: 'Teklif Al', targetId: 'contact' },
   },
   {
-    image: '/images/hasere.jpg', 
+    image: 'images/hasere.jpg', 
     title: 'Haşere İlaçlama',
     subtitle: 'Bahçenizdeki sinek, karınca, kene ve diğer zararlılara karşı etkili, çevre dostu ilaçlama hizmeti sunuyoruz. Bitkilere zarar vermeden sağlıklı bir ortam oluşturuyoruz.',
     cta: { label: 'Teklif Al', targetId: 'contact' },

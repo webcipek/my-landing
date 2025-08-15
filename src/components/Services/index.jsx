@@ -5,7 +5,7 @@ const services = [
   {
     emoji: '🎨',
     title: 'Boya - Badana',
-    img: '/images/boya-badana.jpg',
+    img: 'images/boya-badana.jpg',
     desc:
       'Evinizin ve iş yerinizin tüm iç ve dış cephe boya işlerini profesyonel ekibimizle, temiz ve düzenli şekilde gerçekleştiriyoruz. Düz boya, saten boya, tavan ve duvar boyama, renk yenileme gibi hizmetler sunuyoruz.',
     bullets: [
@@ -19,7 +19,7 @@ const services = [
   {
     emoji: '🧹',
     title: 'Bahçe Temizliği',
-    img: '/images/bahce1.avif',
+    img: 'images/bahce1.avif',
     desc:
       'Bahçenizin düzenli ve sağlıklı görünmesi için kapsamlı temizlik hizmeti sunuyoruz. Yaprak ve dal toplama, yabani ot temizliği, budama desteği ve atıkların çıkarılması işlemlerini profesyonel ekipmanlarla yapıyoruz.',
     bullets: [
@@ -33,7 +33,7 @@ const services = [
   {
     emoji: '🌱',
     title: 'Çim Biçme',
-    img: '/images/cim1.jpg',
+    img: 'images/cim1.jpg',
     desc:
       'Bahçenizin estetik görünümü ve çim sağlığı için düzenli biçim ve bakım şart. Kenar düzeltme, biçme, toplama ve isteğe bağlı gübreleme önerileriyle yeşil alanlarınızı koruyoruz.',
     bullets: [
@@ -47,7 +47,7 @@ const services = [
   {
     emoji: '🪲',
     title: 'Haşere İlaçlama (Böcek İlaçlama)',
-    img: '/images/haşere.jpg',
+    img: 'images/haşere.jpg',
     desc:
       'Ev ve iş yerlerinde sağlığınızı tehdit eden haşere ve böceklerle mücadele için profesyonel ilaçlama hizmeti veriyoruz. Jel, ULV, püskürtme gibi yöntemleri çocuk ve evcil hayvan dostu ürünlerle uyguluyoruz.',
     bullets: [

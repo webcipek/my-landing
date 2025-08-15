@@ -43,7 +43,7 @@ export default function Header() {
               rel="noreferrer"
             >
               <img
-                src="/images/whatsapp-logo.svg"
+                src="images/whatsapp-logo.svg"
                 alt="WhatsApp"
                 className={styles.whatsappIcon}
               />
@@ -77,7 +77,7 @@ export default function Header() {
             rel="noreferrer"
           >
             <img
-              src="/images/whatsapp-logo.svg"
+              src="images/whatsapp-logo.svg"
               alt="WhatsApp"
               className={styles.whatsappIcon}
             />

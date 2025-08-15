@@ -1,0 +1,17 @@
+@use '../../assets/styles/variables' as v;
+
+.logo { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; }
+.mark { width: 56px; height: 56px; fill: v.$paint; }
+.leaf { fill: v.$garden; }
+.text { font-weight: 800; letter-spacing: .2px; color: transparent;     
+    background: linear-gradient(90deg, v.$paint, v.$garden);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    font-size: 25px;
+    @media (min-width: 860px) {
+        font-size: 40px;
+    }
+}
+
+    

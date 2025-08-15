@@ -1,0 +1,40 @@
+@use 'variables' as v;
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  background: v.$bg;
+  color: v.$text;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: v.$primary;
+  color: #fff;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: v.$radius;
+  cursor: pointer;
+  box-shadow: v.$shadow-sm;
+
+  &:hover { opacity: .92; }
+}
+.btnOutline {
+  background: #fff;
+  color: v.$primary;
+  border: 1px solid rgba(2,6,23,.15);
+}

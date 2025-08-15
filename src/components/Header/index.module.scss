@@ -1,0 +1,77 @@
+@use '../../assets/styles/variables' as *;
+
+.header {
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,.85);
+  border-bottom: 1px solid rgba(2,6,23,.08);
+}
+
+.bar {
+  
+  display: flex; align-items: center; justify-content: space-between;
+  padding:16px 0;
+}
+
+/* Marka/Logo tıklanabilir olsun */
+.brand {
+  display: inline-flex; align-items: center;
+  background: transparent; border: 0; padding: 0; cursor: pointer;
+}
+
+/* Masaüstü nav */
+.navDesktop {
+  display: none; align-items: center; gap: 14px;
+}
+.navDesktop button {
+  background: transparent; border: 0; cursor: pointer; color: $ink;
+  padding: 8px 10px; border-radius: 10px; font-weight: 500;
+  &:hover { background: rgba(2,6,23,.06); }
+}
+
+/* Telefon için hafif etiket */
+.quick {
+  font-size: 14px; color: $muted; text-decoration: none; padding: 6px 8px;
+  border: 1px dashed rgba(2,6,23,.2); border-radius: 8px;
+}
+
+/* WhatsApp: çerçeve + yazı rengi #25D366, hover’da dolu yeşil */
+.whatsappBtn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px;
+  border: 2px solid #25D366;
+  color: #25D366;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all .2s ease;
+  background: transparent;
+
+  &:hover {
+    background: #25D366;
+    color: #fff;
+
+    // .whatsappIcon { filter: brightness(0) invert(1); } /* ikonu beyaza çevir */
+  }
+}
+.whatsappIcon { width: 22px; height: 22px; display: block; }
+
+/* Mobil menü butonu */
+.menuBtn {
+  background: #fff; border: 1px solid rgba(2,6,23,.15);
+  width: 40px; height: 40px; border-radius: 12px; cursor: pointer;
+}
+
+/* Mobil nav paneli */
+.navMobile {
+  display: grid; gap: 8px; padding: 12px 16px;
+  border-top: 1px solid rgba(2,6,23,.08); background: #fff;
+  button { text-align: left; background: transparent; border: 0; padding: 10px 8px; border-radius: 8px; }
+  button:hover { background: rgba(2,6,23,.06); }
+}
+
+/* Masaüstünde nav görünür, mobil gizlenir */
+@media (min-width: 860px) {
+  .navDesktop { display: flex; }
+  .menuBtn, .navMobile { display: none; }
+}
